@@ -59,7 +59,7 @@ document.querySelector('ethiopian-date-picker').addEventListener('change', (even
 ```
 
 Contributing :handshake:
-We welcome contributions to the Ethiopian Date Picker project! Please read our Contributing Guidelines before submitting a pull request.
+We welcome contributions to the Ethiopian Date Picker project! Please read our [Contributing Guidelines](https://github.com/hope-miky/ethiopian-date-picker/wiki/Contribution-Guidelines) before submitting a pull request.
 
 Support :question:
 If you have any questions or issues, please open an issue on our GitHub issues page.
@@ -71,4 +71,4 @@ Acknowledgments :star:
 Icons made by Icon Author from www.icon-website.com
 Contributions by Contributor's Name
 
-Brought to you with :heart: by ![Tesfamichael Molla](https://tesfamichael.dev)
+Brought to you with :heart: by [Tesfamichael Molla](https://tesfamichael.dev)
