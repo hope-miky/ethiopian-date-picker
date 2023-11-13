@@ -70,3 +70,5 @@ This project is licensed under the MIT License.
 Acknowledgments :star:
 Icons made by Icon Author from www.icon-website.com
 Contributions by Contributor's Name
+
+Brought to you with :heart: by ![Tesfamichael Molla](https://tesfamichael.dev)
