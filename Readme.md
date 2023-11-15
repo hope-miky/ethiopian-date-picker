@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Ethiopian Date Picker Component :calendar: Made with Stencil
+# Ethiopian Date Picker Component :calendar: 
 
 ![Ethiopian Date Picker Logo](https://<domain-pending>.png) <!-- Replace with your project logo URL -->
 

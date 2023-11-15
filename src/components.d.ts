@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface EthioDatePicker {
+        "autoNow": boolean;
+        "customPlaceHolder": string;
     }
 }
 declare global {
@@ -22,6 +24,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface EthioDatePicker {
+        "autoNow"?: boolean;
+        "customPlaceHolder"?: string;
     }
     interface IntrinsicElements {
         "ethio-date-picker": EthioDatePicker;

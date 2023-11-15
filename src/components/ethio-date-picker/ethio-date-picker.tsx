@@ -1,4 +1,5 @@
-import { Component, Listen, State, h, Element } from '@stencil/core';
+import { Component, Listen, State, h, Element, Prop } from '@stencil/core';
+import { months } from '../../constants/months';
 
 @Component({
   tag: 'ethio-date-picker',
@@ -6,9 +7,17 @@ import { Component, Listen, State, h, Element } from '@stencil/core';
   shadow: true,
 })
 export class EthioDatePicker {
+  
+  @Element() el: HTMLElement;  // Reference to the host element
 
   @State() viewDropdown: boolean = false;
-  @Element() el: HTMLElement;  // Reference to the host element
+  @State() selectedDate: number = Date.now();
+
+  @State() selectedMonth: number = new Date().getMonth();
+  @State() selectedYear: number = new Date().getFullYear();
+
+  @Prop() customPlaceHolder: string;
+  @Prop() autoNow: boolean = false;
 
 
   @Listen('focus', { capture: true })
@@ -29,10 +38,12 @@ export class EthioDatePicker {
   }
 
   render() {
+
     return (
       <div class="main-div">
+
         <div class="datepicker-container">
-            <input type="text" id="datepicker" placeholder="Select Date" />
+            <input type="text" id="datepicker" placeholder={  this.customPlaceHolder ?? "dd/mm/yyyy"  } />
             <span class="date-icon">📅</span>
         </div>
 
@@ -43,7 +54,7 @@ export class EthioDatePicker {
                     <div class="dates">
                         <div class="month-yr-navigation">
                             <div class="current-month-year">
-                                <div class="view month">April</div>
+                                <div class="view month"> {months[this.selectedMonth]}, {this.selectedMonth}</div>
                                 <div class="view year">2022</div>
                                 <div class="drop-icon">&#10095;</div>
                             </div>
