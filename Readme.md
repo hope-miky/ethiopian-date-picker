@@ -1,4 +1,10 @@
-# Ethiopian Date Picker Component :calendar:
+<p align="center">
+  <a href="#">
+    <img alt="stencil-logo" src="https://github.com/ionic-team/stencil/blob/main/stencil-logo.png" width="60">
+  </a>
+</p>
+
+# Ethiopian Date Picker Component :calendar: Made with Stencil
 
 ![Ethiopian Date Picker Logo](https://<domain-pending>.png) <!-- Replace with your project logo URL -->
 
