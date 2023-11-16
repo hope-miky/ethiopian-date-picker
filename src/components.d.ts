@@ -6,36 +6,75 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DaysNameView {
+    }
     interface EthioDatePicker {
         "autoNow": boolean;
         "customPlaceHolder": string;
     }
+    interface MonthView {
+    }
+    interface YearView {
+    }
 }
 declare global {
+    interface HTMLDaysNameViewElement extends Components.DaysNameView, HTMLStencilElement {
+    }
+    var HTMLDaysNameViewElement: {
+        prototype: HTMLDaysNameViewElement;
+        new (): HTMLDaysNameViewElement;
+    };
     interface HTMLEthioDatePickerElement extends Components.EthioDatePicker, HTMLStencilElement {
     }
     var HTMLEthioDatePickerElement: {
         prototype: HTMLEthioDatePickerElement;
         new (): HTMLEthioDatePickerElement;
     };
+    interface HTMLMonthViewElement extends Components.MonthView, HTMLStencilElement {
+    }
+    var HTMLMonthViewElement: {
+        prototype: HTMLMonthViewElement;
+        new (): HTMLMonthViewElement;
+    };
+    interface HTMLYearViewElement extends Components.YearView, HTMLStencilElement {
+    }
+    var HTMLYearViewElement: {
+        prototype: HTMLYearViewElement;
+        new (): HTMLYearViewElement;
+    };
     interface HTMLElementTagNameMap {
+        "days-name-view": HTMLDaysNameViewElement;
         "ethio-date-picker": HTMLEthioDatePickerElement;
+        "month-view": HTMLMonthViewElement;
+        "year-view": HTMLYearViewElement;
     }
 }
 declare namespace LocalJSX {
+    interface DaysNameView {
+    }
     interface EthioDatePicker {
         "autoNow"?: boolean;
         "customPlaceHolder"?: string;
     }
+    interface MonthView {
+    }
+    interface YearView {
+    }
     interface IntrinsicElements {
+        "days-name-view": DaysNameView;
         "ethio-date-picker": EthioDatePicker;
+        "month-view": MonthView;
+        "year-view": YearView;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "days-name-view": LocalJSX.DaysNameView & JSXBase.HTMLAttributes<HTMLDaysNameViewElement>;
             "ethio-date-picker": LocalJSX.EthioDatePicker & JSXBase.HTMLAttributes<HTMLEthioDatePickerElement>;
+            "month-view": LocalJSX.MonthView & JSXBase.HTMLAttributes<HTMLMonthViewElement>;
+            "year-view": LocalJSX.YearView & JSXBase.HTMLAttributes<HTMLYearViewElement>;
         }
     }
 }

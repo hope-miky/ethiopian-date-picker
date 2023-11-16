@@ -7,6 +7,11 @@ import { months } from '../../constants/months';
   shadow: true,
 })
 export class EthioDatePicker {
+
+  maxMonthDays = 30;
+  maxYearDays = 365;
+  maxLeapYearDays = 366;
+  maxMonth = 12;
   
   @Element() el: HTMLElement;  // Reference to the host element
 
@@ -54,54 +59,29 @@ export class EthioDatePicker {
                     <div class="dates">
                         <div class="month-yr-navigation">
                             <div class="current-month-year">
-                                <div class="view month"> {months[this.selectedMonth]}, {this.selectedMonth}</div>
+                                <div class="view month"> {months[this.selectedMonth]},</div>
                                 <div class="view year">2022</div>
-                                <div class="drop-icon">&#10095;</div>
                             </div>
                             <div class="buttons">
-                                <span class="arrow prev-month">&#10094;</span>
-                                <span class="arrow next-month">&#10095;</span>
+                                <span onClick={() => {
+                                  if (this.selectedMonth > 0) {
+                                    this.selectedMonth = this.selectedMonth - 1;
+                                  } else {
+                                    this.selectedMonth = this.maxMonth;
+                                  }
+                                }} class="arrow prev-month">&#10094;</span>
+                                <span onClick={() => {
+                                  if (this.selectedMonth < this.maxMonth) {
+                                    this.selectedMonth = this.selectedMonth + 1;
+                                  } else {
+                                    this.selectedMonth = 0;
+                                  }
+                                }} class="arrow next-month">&#10095;</span>
                             </div>
                         </div>
-                        <div class="dates-grid">
-                            <div class="date-view">M</div>
-                            <div class="date-view">T</div>
-                            <div class="date-view">W</div>
-                            <div class="date-view">T</div>
-                            <div class="date-view">F</div>
-                            <div class="date-view">S</div>
-                            <div class="date-view">S</div>
-
-                            <div class="date-pick">1</div>
-                            <div class="date-pick">2</div>
-                            <div class="date-pick">3</div>
-                            <div class="date-pick">4</div>
-                            <div class="date-pick">5</div>
-                            <div class="date-pick">7</div>
-                            <div class="date-pick">8</div>
-                            <div class="date-pick">9</div>
-                            <div class="date-pick">10</div>
-                            <div class="date-pick">11</div>
-                            <div class="date-pick">12</div>
-                            <div class="date-pick">13</div>
-                            <div class="date-pick">14</div>
-                            <div class="date-pick">15</div>
-                            <div class="date-pick">16</div>
-                            <div class="date-pick">17</div>
-                            <div class="date-pick">18</div>
-                            <div class="date-pick">19</div>
-                            <div class="date-pick">20</div>
-                            <div class="date-pick">21</div>
-                            <div class="date-pick">22</div>
-                            <div class="date-pick">23</div>
-                            <div class="date-pick">24</div>
-                            <div class="date-pick">25</div>
-                            <div class="date-pick">26</div>
-                            <div class="date-pick">27</div>
-                            <div class="date-pick">28</div>
-                            <div class="date-pick">29</div>
-                            <div class="date-pick">30</div>
-                        </div>
+                        {/* <days-name-view></days-name-view> */}
+                        {/* <year-view></year-view> */}
+                        <month-view></month-view>
                     </div>
                 </div>
               </div>
