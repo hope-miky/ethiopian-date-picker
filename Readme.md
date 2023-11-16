@@ -1,12 +1,10 @@
 <p align="center">
   <a href="#">
-    <img alt="stencil-logo" src="https://github.com/ionic-team/stencil/blob/main/stencil-logo.png" width="60">
+    <img alt="stencil-logo" style="display: block; transform: scale(1.5)" src="assets/images/icon-1.png" width="300">
   </a>
 </p>
 
 # Ethiopian Date Picker Component :calendar: 
-
-![Ethiopian Date Picker Logo](/assets/images/icon-1.png) <!-- Replace with your project logo URL -->
 
 An elegant, feature-rich Ethiopian calendar date picker web component designed for easy integration into modern web platforms. Utilizing the unique 13-month structure of the Ethiopian calendar, it provides seamless local date features tailored for both international and Ethiopian users.
 
