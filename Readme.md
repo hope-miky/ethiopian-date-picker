@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img alt="stencil-logo" style="display: block; transform: scale(1.5)" src="assets/images/icon-1.png" width="300">
+    <img alt="stencil-logo" style="display: block;" src="assets/images/icon-1.png" width="200">
   </a>
 </p>
 
