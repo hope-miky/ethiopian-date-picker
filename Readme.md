@@ -6,7 +6,7 @@
 
 # Ethiopian Date Picker Component :calendar: 
 
-![Ethiopian Date Picker Logo](https://<domain-pending>.png) <!-- Replace with your project logo URL -->
+![Ethiopian Date Picker Logo](/assets/images/icon-1.png) <!-- Replace with your project logo URL -->
 
 An elegant, feature-rich Ethiopian calendar date picker web component designed for easy integration into modern web platforms. Utilizing the unique 13-month structure of the Ethiopian calendar, it provides seamless local date features tailored for both international and Ethiopian users.
 
